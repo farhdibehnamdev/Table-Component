@@ -1,0 +1,80 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: Inter, sans-serif;
+}
+
+/**************************
+ * QUOTE SECTION  *
+ **************************/
+.quote {
+  margin: 0 auto;
+  font-size: 30px;
+  font-weight: bold;
+  width: 800px;
+  margin-top: 100px;
+  text-align: center;
+  background-color: #223a7e;
+  border-radius: 10px;
+  padding: 20px;
+  line-height: 1.5;
+  color: #fdffff;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+/**************************
+ * TABLE SECTION *
+ **************************/
+.table {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  width: 960px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.25);
+}
+
+.header {
+  background-color: #223a7e;
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+}
+
+.row {
+  display: flex;
+  font-size: 18px;
+  padding: 20px;
+  gap: 100px;
+}
+
+.row p {
+  flex: 1;
+}
+
+.table .row:not(.header):nth-child(odd) {
+  background-color: #e4e5e7;
+}
+.row p:nth-of-type(1) {
+  font-weight: bold;
+}
+
+/******************
+ * FOOTER SECTION *
+ ******************/
+
+footer {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 24px;
+}
